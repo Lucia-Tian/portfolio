@@ -17,7 +17,6 @@ body {
 .main {
   margin-left: 200px;
   max-width: 1000px;
-  
 }
 
 .header {
@@ -45,14 +44,12 @@ h2 {
 
 
 .column img {
-  margin-top: 4px;
   vertical-align: middle;
   padding: 8px;
 }
 
 /* Create three equal columns that floats next to each other */
 .column {
-   
   float: left;
   width: 50%;
   display: none; /* Hide all elements by default */
@@ -97,10 +94,10 @@ h2 {
 <h2>Portfolio</h2>
 
 <div id="myBtnContainer">
-  <button class="btn active" onclick="filterSelection('all')"> All</button>
-  <button class="btn" onclick="filterSelection('architecture')"> Architecture</button>
-  <button class="btn" onclick="filterSelection('design')">Art & Design</button>
-  <button class="btn" onclick="filterSelection('photography')"> Photography</button>
+  
+  <button class="btn active" onclick="filterSelection('architecture')"> Architecture</button>
+  <button class="btn" onclick="filterSelection('art')">Artwork</button>
+  <button class="btn" onclick="filterSelection('design')">Graphic Design</button>
 </div>
 <!-- END HEADER -->
 </div>
@@ -108,52 +105,104 @@ h2 {
 <!-- MAIN (Center website) -->
 <div class="main">
 
-
-<div class="column architecture">
-  <div class="content">
-  <img src="https://i.imgur.com/kmN2mQx.jpg" alt="Basswood Model" style="width:100%">
+  <div class="column architecture">
+    <div class="content">
+    <img src="https://i.imgur.com/dQ3aC2l.jpg" alt="Casa Martiani Analytical" style="width:100%">
+   </div>
   </div>
-</div>
 
-<div class="column architecture">
-  <div class="content">
+
+  <div class="column architecture">
+    <div class="content">
+    <img src="https://i.imgur.com/EulO44q.jpg" alt="Revit Render" style="width:100%">
+    </div>
+  </div>
+
+  <div class="column architecture">
+    <div class="content">
+    <img src="https://i.imgur.com/kmN2mQx.jpg" alt="Basswood Model" style="width:100%">
+    </div>
+  </div>
+
+  <div class="column architecture">
+    <div class="content">
     <img src="https://i.imgur.com/uqE9bHz.jpg" alt="Revit Craftsman" style="width:100%">
+    </div>
+  </div>  
+
+  <div class="column art">
+    <div class="content">
+    <img src="https://i.imgur.com/0tOnx2d.jpg" alt="Jelly Spraypaint" style="width:100%">
+    </div>
   </div>
-</div>
 
 
-<div class="column architecture">
-  <div class="content">
-  <img src="https://i.imgur.com/dQ3aC2l.jpg" alt="Casa Martiani Analytical" style="width:100%">
+  <div class="column architecture">
+    <div class="content">
+    <img src="https://i.imgur.com/J9rVtik.jpg" alt="Model section/plan" style="width:100%">
+    </div>
   </div>
-</div>
 
-<div class="column architecture">
-  <div class="content">
-  <img src="https://i.imgur.com/sqQtMZ5.jpg" alt="Light Model" style="width:100%">
+
+  <div class="column architecture">
+    <div class="content">
+    <img src="https://i.imgur.com/sqQtMZ5.jpg" alt="Light Model" style="width:100%">
+    </div>
   </div>
-</div>
 
-<div class="column architecture">
-  <div class="content">
-  <img src="https://i.imgur.com/EulO44q.jpg" alt="Revit Render" style="width:100%">
+  <div class="column design">
+    <div class="content">
+    <img src="https://i.imgur.com/ys4GDkq.jpg?1" alt="9/11 Heart Disease" style="width:100%">
+    </div>
   </div>
-</div>
-
-<div class="column architecture">
-  <div class="content">
-  <img src="https://i.imgur.com/J9rVtik.jpg" alt="Model section/plan" style="width:100%">
-  </div>
-</div>
-
-<div class="column design">
-  <div class="content">
-  <img src="https://i.imgur.com/0tOnx2d.jpg" alt="Jelly Spraypaint" style="width:100%">
-  </div>
-</div>
-
 
  
+  <div class="column architecture">
+    <div class="content">
+    <img src="https://i.imgur.com/3MviUJy.jpg" alt="Light Plan & Section" style="width:100%">
+    </div>
+  </div>
+
+
+  <div class="column design">
+    <div class="content">
+    <img src="https://i.imgur.com/qUhBH0B.jpg" alt="Game Night Ad" style="width:100%">
+    </div>
+  </div>
+
+  <div class="column architecture">
+    <div class="content">
+    <img src="https://i.imgur.com/eVHkWSA.jpg" alt="Refined Light Model" style="width:100%">
+    </div>
+  </div>
+
+ 
+
+  <div class="column architecture">
+    <div class="content">
+    <img src="https://i.imgur.com/L2CG8uE.jpg" alt="Martiani Spread" style="width:100%">
+    </div>
+  </div>
+
+
+
+  <div class="column design">
+    <div class="content">
+    <img src="https://i.imgur.com/t0QyyOY.jpg" alt="Bagel Bites Ad" style="width:100%">
+    </div>
+  </div>
+  
+
+  <div class="column design">
+    <div class="content">
+    <img src="https://i.imgur.com/r1u2U9Y.jpg" alt="Cell Illustration" style="width:100%">
+    </div>
+  </div>
+
+  
+
+  
+
 <!-- END GRID -->
 </div>
 
@@ -161,7 +210,7 @@ h2 {
 </div>
 
 <script>
-filterSelection("all")
+filterSelection("architecture") 
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("column");
