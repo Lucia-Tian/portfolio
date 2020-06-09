@@ -10,7 +10,7 @@
 body {
   background-color: white;
   padding: 20px;
-  font-family: Arial;
+  font-family: Tahoma;
 }
 
 /* Center website */
@@ -32,20 +32,20 @@ body {
 }
 
 h1 {
-  font-size: 30px;
-  font-family: Arial;
+  font-size: 35px;
+  font-family: Tahoma;
 }
 
 h2 {
   font-size: 18px;
   word-break: break-all;
-  font-family: Arial;
+  font-family: Tahoma;
 }
 
 
 .column img {
   vertical-align: middle;
-  padding: 8px;
+  padding: 25px;
 }
 
 /* Create three equal columns that floats next to each other */
@@ -72,13 +72,16 @@ h2 {
 }
 
 .btn:hover {
-  background-color: lightgray;
-  color: white;
+  color: lightgray;
 }
 
 .btn.active {
   color: black;
 }
+
+
+
+
 
 </style>
 </head>
@@ -96,8 +99,14 @@ h2 {
 <div id="myBtnContainer">
   
   <button class="btn active" onclick="filterSelection('architecture')"> Architecture</button>
+  <button class="btn" onclick="filterSelection('cad')">  &#160; &#160; &#160;CAD</button>
+  <button class="btn" onclick="filterSelection('draft')"> &#160; &#160; &#160;Drafting </button>
+  <button class="btn" onclick="filterSelection('models')">  &#160; &#160; &#160;Models </button>
+  <button class="btn" onclick="filterSelection('coop')"> &#160; &#160; &#160;Co-op Project</button>
   <button class="btn" onclick="filterSelection('art')">Artwork</button>
   <button class="btn" onclick="filterSelection('design')">Graphic Design</button>
+  <button class="btn" onclick="filterSelection('engn')">Engineering Design</button>
+  <button class="btn" onclick="filterSelection('about')">About</button>
 </div>
 <!-- END HEADER -->
 </div>
@@ -105,48 +114,129 @@ h2 {
 <!-- MAIN (Center website) -->
 <div class="main">
 
-  <div class="column architecture">
+  <!-- Modal for full size images on click-->
+  
+  <div class="column architecture draft">
     <div class="content">
-    <img src="https://i.imgur.com/dQ3aC2l.jpg" alt="Casa Martiani Analytical" style="width:100%">
+    <img src="portfolio images/csanalytical.jpg" alt="Casa Martiani Analytical" style="width:100%">
    </div>
   </div>
 
-
-  <div class="column architecture">
+  <div class="column architecture cad">
     <div class="content">
-    <img src="https://i.imgur.com/EulO44q.jpg" alt="Revit Render" style="width:100%">
+    <img src="portfolio images/EulO44q.jpg" alt="Revit Render" style="width:100%">
     </div>
   </div>
 
-  <div class="column architecture">
+
+  <div class="column architecture models">
     <div class="content">
-    <img src="https://i.imgur.com/kmN2mQx.jpg" alt="Basswood Model" style="width:100%">
+    <img src="portfolio images/basswood model.jpg" alt="Basswood Model" style="width:100%">
     </div>
   </div>
 
-  <div class="column architecture">
+  <div class="column architecture cad">
     <div class="content">
-    <img src="https://i.imgur.com/uqE9bHz.jpg" alt="Revit Craftsman" style="width:100%">
+    <img src="portfolio images/inside.jpg" alt="Inside Collage Render" style="width:100%">
+    </div>
+  </div>
+
+  <div class="column architecture cad">
+    <div class="content">
+    <img src="portfolio images/streetside.collage.jpg" alt="Outside Collage Render" style="width:100%">
+    </div>
+  </div>
+
+  <div class="column architecture cad">
+    <div class="content">
+    <img src="portfolio images/axio dark.jpg" alt="Axionmetric Circulation Diagram" style="width:90%">
+    </div>
+  </div>
+
+  <div class="column architecture cad">
+    <div class="content">
+    <img src="portfolio images/Asset 2-100.jpg" alt="Revit Craftsman" style="width:100%">
     </div>
   </div>  
 
-  <div class="column art">
+  <div class="column architecture cad">
     <div class="content">
-    <img src="https://i.imgur.com/0tOnx2d.jpg" alt="Jelly Spraypaint" style="width:100%">
+    <img src="portfolio images/site.plan-01.jpg" alt="Co-op Site Plan" style="width:100%">
+    </div>
+  </div>
+
+  <div class="column architecture cad">
+    <div class="content">
+    <img src="portfolio images/organizational diagram.jpg" alt="Organizational Diagram" style="width:100%">
+    </div>
+  </div>
+
+  <div class="column architecture cad">
+    <div class="content">
+    <img src="portfolio images/floor.plans-03.jpg" alt="Co-op Floor Plan" style="width:100%">
     </div>
   </div>
 
 
-  <div class="column architecture">
+  
+  <div class="column architecture drafting">
     <div class="content">
-    <img src="https://i.imgur.com/J9rVtik.jpg" alt="Model section/plan" style="width:100%">
+    <img src="portfolio images/model section and plan.jpg" alt="Model section/plan" style="width:100%">
     </div>
   </div>
 
-
-  <div class="column architecture">
+  <div class="column architecture models">
     <div class="content">
     <img src="https://i.imgur.com/sqQtMZ5.jpg" alt="Light Model" style="width:100%">
+    </div>
+  </div>
+
+  
+
+  <div class="column architecture cad">
+    <div class="content">
+    <img src="portfolio images/floor.plans-02.jpg" alt="Co-op Floor Plan2" style="width:100%">
+    </div>
+  </div>
+
+
+  
+
+
+  <div class="column architecture draft">
+    <div class="content">
+    <img src="portfolio images/casa martirani section and top floor.jpg" alt="Casa Martirani Plans 2" style="width:100%">
+    </div>
+  </div>
+
+   <div class="column architecture models">
+    <div class="content">
+    <img src="portfolio images/IMG_20200228_154702(1).jpg" alt="Circulation Model" style="width:100%">
+    </div>
+  </div>
+
+  <div class="column architecture draft">
+    <div class="content">
+    <img src="portfolio images/casa martirani basment and first floor.jpg" alt="Casa Martirani Plans" style="width:100%">
+    </div>
+  </div>
+
+  <div class="column architecture draft">
+    <div class="content">
+    <img src="portfolio images/light plan and section.jpg" alt="Light Model Plan and Section" style="width:100%">
+    </div>
+  </div>
+
+  
+  <div class="column architecture models">
+    <div class="content">
+    <img src="https://i.imgur.com/eVHkWSA.jpg" alt="Refined Light Model" style="width:100%">
+    </div>
+  </div>
+
+  <div class="column architecture models">
+    <div class="content">
+    <img src="portfolio images/IMG_20200228_154917(1).jpg" alt="Structure Model" style="width:100%">
     </div>
   </div>
 
@@ -156,34 +246,11 @@ h2 {
     </div>
   </div>
 
- 
-  <div class="column architecture">
-    <div class="content">
-    <img src="https://i.imgur.com/3MviUJy.jpg" alt="Light Plan & Section" style="width:100%">
-    </div>
-  </div>
-
-
   <div class="column design">
     <div class="content">
     <img src="https://i.imgur.com/qUhBH0B.jpg" alt="Game Night Ad" style="width:100%">
     </div>
   </div>
-
-  <div class="column architecture">
-    <div class="content">
-    <img src="https://i.imgur.com/eVHkWSA.jpg" alt="Refined Light Model" style="width:100%">
-    </div>
-  </div>
-
- 
-
-  <div class="column architecture">
-    <div class="content">
-    <img src="https://i.imgur.com/L2CG8uE.jpg" alt="Martiani Spread" style="width:100%">
-    </div>
-  </div>
-
 
 
   <div class="column design">
@@ -191,7 +258,6 @@ h2 {
     <img src="https://i.imgur.com/t0QyyOY.jpg" alt="Bagel Bites Ad" style="width:100%">
     </div>
   </div>
-  
 
   <div class="column design">
     <div class="content">
@@ -199,15 +265,62 @@ h2 {
     </div>
   </div>
 
-  
+  <div class="column art">
+    <div class="content">
+    <img src="portfolio images/jelly spraypaint.jpg" alt="Jelly Spraypaint" style="width:100%">
+    </div>
+  </div>
 
+  <div class="column art">
+    <div class="content">
+    <img src="portfolio images/collage.jpg" alt="Duality Collage" style="width:100%">
+    </div>
+  </div>
+
+  <div class="column coop">
+    <div class="content">
+    <embed src="portfolio images/cooppdf.pdf" type="application/pdf" width="200%" height="550px" />
+    </div>
+  </div>
+
+  <div class="column engn">
+    <div class="content">
+    <img src="portfolio images/fp.jpg" alt="Duality Collage" style="width:200%">
+    </div>
+  </div>
+
+  <div class="column about">
+    <div class="content">
+    <br><br>
+    <h2>About</h2>
   
+    <p>Hello! I'm Lucia, a student at Brown University. I am interested in human decision making and its relationship to economics, psychology, computer science, and especially architecture. </p>
+    <br>
+    <p><a href="https://www.linkedin.com/in/lucia--tian/">linkedin</a></p>
+    
+    </div>
+  </div>
+
+  <div class="column about">
+    <div class="content">
+    <img src="https://i.imgur.com/L2CG8uE.jpg" alt="Martiani Spread" style="width:100%">
+    </div>
+  </div>
+
+  <div class="column about">
+    <div class="content">
+    <img src="portfolio images/IMG_20200313_142236.jpg" alt="Midterm Pin-up" style="width:100%">
+    </div>
+  </div>
 
 <!-- END GRID -->
 </div>
 
+
 <!-- END MAIN -->
 </div>
+
+
 
 <script>
 filterSelection("architecture") 
@@ -242,6 +355,13 @@ function w3RemoveClass(element, name) {
   element.className = arr1.join(" ");
 }
 
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
 
 // Add active class to the current button (highlight it)
 var btnContainer = document.getElementById("myBtnContainer");
