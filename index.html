@@ -80,6 +80,41 @@ h2 {
 }
 
 
+a.nav-link:link
+{
+   color: black;
+   text-decoration: none;
+}
+a.nav-link:visited
+{
+   color: black;
+   text-decoration: none;
+}
+a.nav-link:hover
+{
+   color: lightgray;
+   text-decoration: none;
+}
+a.nav-link:active
+{
+   color: black;
+   text-decoration: none;
+}
+
+
+
+  
+
+.clickable {
+    transition: transform .2s; /* Animation */
+
+}
+
+.clickable:hover {
+ transform: scale(1.03); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
 
 
 
@@ -87,10 +122,11 @@ h2 {
 </head>
 <body>
 
+
 <!-- HEADER (uncenter website) -->
 <div class="header">
 
-<h1>Lucia Tian</h1>
+<h1><a href="index.html" class="nav-link" >Lucia Tian</a></h1>
 
 <br>
 
@@ -99,10 +135,9 @@ h2 {
 <div id="myBtnContainer">
   
   <button class="btn active" onclick="filterSelection('architecture')"> Architecture</button>
-  <button class="btn" onclick="filterSelection('cad')">  &#160; &#160; &#160;CAD</button>
+  <button class="btn" onclick="filterSelection('cad')">  &#160; &#160; &#160;Renders</button>
   <button class="btn" onclick="filterSelection('draft')"> &#160; &#160; &#160;Drafting </button>
   <button class="btn" onclick="filterSelection('models')">  &#160; &#160; &#160;Models </button>
-  <button class="btn" onclick="filterSelection('coop')"> &#160; &#160; &#160;Co-op Project</button>
   <button class="btn" onclick="filterSelection('art')">Artwork</button>
   <button class="btn" onclick="filterSelection('design')">Graphic Design</button>
   <button class="btn" onclick="filterSelection('engn')">Engineering Design</button>
@@ -115,126 +150,189 @@ h2 {
 <div class="main">
 
   <!-- Modal for full size images on click-->
-  
+
   <div class="column architecture draft">
     <div class="content">
-    <img src="portfolio images/csanalytical.jpg" alt="Casa Martiani Analytical" style="width:100%">
+      <a href="casamartirani.html">
+    <img  class="clickable" src="portfolio images/csanalytical.jpg" alt="Casa Martiani Analytical" style="width:100%">
+      </a>
    </div>
   </div>
 
   <div class="column architecture cad">
     <div class="content">
-    <img src="portfolio images/EulO44q.jpg" alt="Revit Render" style="width:100%">
+       <a href="urbanforestry.html">
+    <img class="clickable" src="portfolio images/urbanisorender.png" alt="Urban Forestry Center Render" style="width:100%">
+      </a>
+    </div>
+  </div>
+
+
+
+   <div class="column architecture models">
+    <div class="content">
+      <a href="slitbathroom.html">
+    <img class="clickable" src="portfolio images/light model 1.png" alt="Light Box Model 1" style="width:100%">
+    </a>
+    </div>
+  </div>
+
+    <div class="column architecture cad">
+    <div class="content">
+      <a href="gradcoop.html">
+    <img class="clickable" src="portfolio images/inside.jpg" alt="Inside Collage Render" style="width:100%">
+     </a>
     </div>
   </div>
 
 
   <div class="column architecture models">
     <div class="content">
-    <img src="portfolio images/basswood model.jpg" alt="Basswood Model" style="width:100%">
-    </div>
-  </div>
-
-  <div class="column architecture cad">
-    <div class="content">
-    <img src="portfolio images/inside.jpg" alt="Inside Collage Render" style="width:100%">
-    </div>
-  </div>
-
-  <div class="column architecture cad">
-    <div class="content">
-    <img src="portfolio images/streetside.collage.jpg" alt="Outside Collage Render" style="width:100%">
-    </div>
-  </div>
-
-  <div class="column architecture cad">
-    <div class="content">
-    <img src="portfolio images/axio dark.jpg" alt="Axionmetric Circulation Diagram" style="width:90%">
-    </div>
-  </div>
-
-  <div class="column architecture cad">
-    <div class="content">
-    <img src="portfolio images/Asset 2-100.jpg" alt="Revit Craftsman" style="width:100%">
-    </div>
-  </div>  
-
-  <div class="column architecture cad">
-    <div class="content">
-    <img src="portfolio images/site.plan-01.jpg" alt="Co-op Site Plan" style="width:100%">
-    </div>
-  </div>
-
-  <div class="column architecture cad">
-    <div class="content">
-    <img src="portfolio images/organizational diagram.jpg" alt="Organizational Diagram" style="width:100%">
-    </div>
-  </div>
-
-  <div class="column architecture cad">
-    <div class="content">
-    <img src="portfolio images/floor.plans-03.jpg" alt="Co-op Floor Plan" style="width:100%">
+          <a href="casamartirani.html">
+    <img class="clickable" src="portfolio images/basswood model.jpg" alt="Basswood Model" style="width:100%">
+      </a>
     </div>
   </div>
 
 
-  
-  <div class="column architecture drafting">
+
+  <div class="column architecture draft">
+    <div class="content">
+      <a href="slitbathroom.html">
+    <img class="clickable" src="portfolio images/bathplan.png" alt="Slit Bathroom Plan" style="width:100%">
+      </a>
+    </div>
+  </div>
+
+
+  <div class="column architecture cad">
+    <div class="content">
+    <img src="portfolio images/rivervale.png" alt="Rivervale Render with Settembrino" style="width:90%">
+    </div>
+  </div>
+
+
+  <div class="column cad">
+    <div class="content">
+    <img src="portfolio images/EulO44q.jpg" alt="Revit Render" style="width:100%">
+    </div>
+  </div>
+
+  <div class="column architecture models">
+    <div class="content">
+      <a href="casamartirani.html">
+    <img class="clickable" src="portfolio images/IMG_20200228_154702(1).jpg" alt="Circulation Model" style="width:100%">
+      </a>
+    </div>
+  </div>
+
+
+  <div class="column architecture cad">
+    <div class="content">
+      <a href="gradcoop.html">
+    <img class="clickable" src="portfolio images/streetside.collage.jpg" alt="Outside Collage Render" style="width:100%">
+        </a>
+    </div>
+  </div>
+
+  <div class="column architecture draft">
+    <div class="content">
+       <a href="urbanforestry.html">
+    <img class="clickable" src="portfolio images/siteplanurban.png" alt="Forest Center Site Plan" style="width:100%">
+        </a>
+    </div>
+  </div>
+
+
+  <div class="column drafting">
     <div class="content">
     <img src="portfolio images/model section and plan.jpg" alt="Model section/plan" style="width:100%">
     </div>
   </div>
 
-  <div class="column architecture models">
+  <div class="column architecture draft">
+    <div class="content">
+       <a href="gradcoop.html">
+    <img class="clickable" src="portfolio images/axio dark.jpg" alt="Axionmetric Circulation Diagram" style="width:100%">
+        </a>
+    </div>
+  </div>
+
+
+  <div class="column architecture cad">
+    <div class="content">
+       <a href="slitbathroom.html">
+    <img class="clickable" src="portfolio images/worms-eye-3.png" alt="Slit Bathroom Worsmeye" style="width:100%">
+    </a>
+    </div>
+  </div>
+
+  <div class="column architecture draft">
+    <div class="content">
+          <a href="slitbathroom.html">
+    <img class="clickable" src="portfolio images/mirror section.png" alt="Slit Bathroom Plan" style="width:100%">
+    </a>
+    </div>
+  </div>
+  
+
+  <div class="column draft">
+    <div class="content">
+    <img src="portfolio images/site.plan-01.jpg" alt="Co-op Site Plan" style="width:100%">
+    </div>
+  </div>
+
+
+
+
+  <div class="column models">
     <div class="content">
     <img src="https://i.imgur.com/sqQtMZ5.jpg" alt="Light Model" style="width:100%">
     </div>
   </div>
 
-  
 
-  <div class="column architecture cad">
+  <div class="column draft">
     <div class="content">
     <img src="portfolio images/floor.plans-02.jpg" alt="Co-op Floor Plan2" style="width:100%">
     </div>
   </div>
 
 
-  
-
-
-  <div class="column architecture draft">
+  <div class="column  draft">
     <div class="content">
     <img src="portfolio images/casa martirani section and top floor.jpg" alt="Casa Martirani Plans 2" style="width:100%">
     </div>
   </div>
 
-   <div class="column architecture models">
-    <div class="content">
-    <img src="portfolio images/IMG_20200228_154702(1).jpg" alt="Circulation Model" style="width:100%">
-    </div>
-  </div>
 
-  <div class="column architecture draft">
+  <div class="column draft">
     <div class="content">
     <img src="portfolio images/casa martirani basment and first floor.jpg" alt="Casa Martirani Plans" style="width:100%">
     </div>
   </div>
 
-  <div class="column architecture draft">
+  <div class="column draft">
     <div class="content">
     <img src="portfolio images/light plan and section.jpg" alt="Light Model Plan and Section" style="width:100%">
     </div>
   </div>
 
   
-  <div class="column architecture models">
+  <div class="column models">
     <div class="content">
     <img src="https://i.imgur.com/eVHkWSA.jpg" alt="Refined Light Model" style="width:100%">
     </div>
   </div>
 
-  <div class="column architecture models">
+
+  <div class="column models">
+    <div class="content">
+    <img src="portfolio images/light model 2.png" alt="Projections Light Box Model" style="width:100%">
+    </div>
+  </div>
+
+  <div class="column models">
     <div class="content">
     <img src="portfolio images/IMG_20200228_154917(1).jpg" alt="Structure Model" style="width:100%">
     </div>
@@ -246,6 +344,8 @@ h2 {
     </div>
   </div>
 
+
+
   <div class="column design">
     <div class="content">
     <img src="https://i.imgur.com/qUhBH0B.jpg" alt="Game Night Ad" style="width:100%">
@@ -256,6 +356,12 @@ h2 {
   <div class="column design">
     <div class="content">
     <img src="https://i.imgur.com/t0QyyOY.jpg" alt="Bagel Bites Ad" style="width:100%">
+    </div>
+  </div>
+
+  <div class="column architecture design">
+    <div class="content">
+    <img src="portfolio images/collage.png" alt="PEEC Collage" style="width:100%">
     </div>
   </div>
 
@@ -277,11 +383,13 @@ h2 {
     </div>
   </div>
 
-  <div class="column coop">
+  <div class="column art">
     <div class="content">
-      <object data="portfolio images/cooppdf.pdf" type="application/pdf" style="min-height:90vh;width:200%"></object>
+    <img src="portfolio images/strawberry.png" alt="Strawberry Painting" style="width:100%">
     </div>
   </div>
+
+
 
   <div class="column engn">
     <div class="content">
