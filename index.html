@@ -19,8 +19,8 @@
     <div class="content">
     <br><br>
     <h2>About</h2>
-  
-    <p>Hello! I'm Lucia Tian, a student at Brown University. I am interested in human decision making and its relationship to economics, psychology, computer science, and especially architecture. 
+
+    <p>Hello! I'm Lucia Tian, a student at Brown University. I am interested in human decision making and its relationship to economics, psychology, computer science, and especially architecture.
 
     <br><br>
     On the right, is a model of Mies' Crown Hall I made for my first architecture class and below is some work from my first architecture studio. Click on some images to see my more current work.
@@ -28,7 +28,7 @@
     </p>
     <br>
     <p><a href="https://www.linkedin.com/in/lucia--tian/">linkedin</a></p>
-    
+
     </div>
   </div>
 
@@ -39,7 +39,7 @@
     </a>
     </div>
   </div>
-  
+
 
   <div class="column architecture cad">
     <div class="content">
@@ -195,7 +195,7 @@
 
 
      <div class="column cad ">
-    <div class="content">   
+    <div class="content">
      <a href="settembrino.html">
     <img class="clickable" src="portfolio images/leapsection.PNG" alt="Leap 3d Section" style="width:100%">
       </a>
@@ -260,7 +260,7 @@
     </div>
   </div>
 
-  
+
   <div class="column models">
     <div class="content">
     <img src="https://i.imgur.com/eVHkWSA.jpg" alt="Refined Light Model" style="width:100%">
@@ -344,8 +344,8 @@
     <div class="content">
     <img src="portfolio images/strawberrypainting.png" alt="Strawberry Painting" style="width:100%">
     </div>
-  </div> 
-  
+  </div>
+
     <div class="column art">
     <div class="content">
     <img src="portfolio images/melancholyartnouveau.jpg" alt="melancholy art nouveau paper sculpture" style="width:100%">
@@ -402,7 +402,7 @@
 <h2>Portfolio</h2>
 
 <div id="myBtnContainer">
-  
+
   <button class="btn active" onclick="filterSelection('architecture')"> Architecture</button>
   <button class="btn" onclick="filterSelection('cad')">  &#160; &#160; &#160;Renders</button>
   <button class="btn" onclick="filterSelection('draft')"> &#160; &#160; &#160;Drafting </button>
@@ -416,7 +416,7 @@
 </div>
 
 <script>
-filterSelection("architecture") 
+filterSelection("architecture")
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("column");
@@ -442,7 +442,7 @@ function w3RemoveClass(element, name) {
   arr2 = name.split(" ");
   for (i = 0; i < arr2.length; i++) {
     while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
     }
   }
   element.className = arr1.join(" ");
@@ -465,6 +465,14 @@ for (var i = 0; i < btns.length; i++) {
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
   });
+}
+
+var img = document.body.getElementsByTagName("img");
+var i = 0;
+while (i < img.length) {
+    img[i].setAttribute("loading", "lazy");
+    //img[i].oncontextmenu = function(){return false;};
+    i++;
 }
 </script>
 
