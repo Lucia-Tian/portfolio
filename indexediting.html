@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styleportfolio.css">
+</head>
+<body>
+
+
+
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+  <!-- Modal for full size images on click-->
+
+
+
+     <div class="column architecture models">
+    <div class="content">
+      <a href="slitbathroom.html">
+    <img class="clickable" src="portfolio images/light model 1.png" alt="Light Box Model 1" style="width:100%">
+    </a>
+    </div>
+  </div>
+
+
+  <div class="column architecture cad">
+    <div class="content">
+       <a href="urbanforestry.html">
+    <img class="clickable" src="portfolio images/urbanisorender.png" alt="Urban Forestry Center Render" style="width:100%">
+      </a>
+    </div>
+  </div>
+
+      <div class="column architecture draft">
+    <div class="content">
+      <a href="settembrino.html">
+    <img  class="clickable" src="portfolio images/settembrino bank.png" alt="Bank Existing Conditions" style="width:100%">
+      </a>
+   </div>
+  </div>
+
+
+    <div class="column architecture draft">
+    <div class="content">
+      <a href="casamartirani.html">
+    <img  class="clickable" src="portfolio images/csanalytical.jpg" alt="Casa Martiani Analytical" style="width:100%">
+      </a>
+   </div>
+  </div>
+
+
+
+    <div class="column architecture cad">
+    <div class="content">
+      <a href="gradcoop.html">
+    <img class="clickable" src="portfolio images/inside.jpg" alt="Inside Collage Render" style="width:100%">
+     </a>
+    </div>
+  </div>
+
+  <div class="column architecture cad">
+    <div class="content">
+       <a href="settembrino.html">
+    <img class="clickable" src="portfolio images/rivervale.png" alt="Rivervale Render with Settembrino" style="width:100%">
+     </a>
+    </div>
+  </div>
+
+
+
+  <div class="column architecture models">
+    <div class="content">
+          <a href="casamartirani.html">
+    <img class="clickable" src="portfolio images/basswood model.jpg" alt="Basswood Model" style="width:100%">
+      </a>
+    </div>
+  </div>
+
+
+
+  <div class="column architecture draft">
+    <div class="content">
+      <a href="slitbathroom.html">
+    <img class="clickable" src="portfolio images/bathplan.png" alt="Slit Bathroom Plan" style="width:100%">
+      </a>
+    </div>
+  </div>
+
+    <div class="column design architecture">
+    <div class="content">
+       <a href="http://post.browndailyherald.com/2021/02/18/family-of-four/">
+    <img class="clickable" src="portfolio images/luciatian_renfamily.png" alt="post- illustration tenderloin rhino render" style="width:100%">
+  </a>
+    </div>
+  </div>
+
+
+
+  <div class="column architecture models">
+    <div class="content">
+      <a href="casamartirani.html">
+    <img class="clickable" src="portfolio images/IMG_20200228_154702(1).jpg" alt="Circulation Model" style="width:100%">
+      </a>
+    </div>
+  </div>
+
+
+  <div class="column architecture cad">
+    <div class="content">
+      <a href="gradcoop.html">
+    <img class="clickable" src="portfolio images/streetside.collage.jpg" alt="Outside Collage Render" style="width:100%">
+        </a>
+    </div>
+  </div>
+
+
+  <div class="column architecture draft">
+    <div class="content">
+       <a href="urbanforestry.html">
+    <img class="clickable" src="portfolio images/siteplanurban.png" alt="Forest Center Site Plan" style="width:100%">
+        </a>
+    </div>
+  </div>
+
+
+
+
+  <div class="column architecture draft">
+    <div class="content">
+          <a href="slitbathroom.html">
+    <img class="clickable" src="portfolio images/mirror section.png" alt="Slit Bathroom Section" style="width:100%">
+    </a>
+    </div>
+  </div>
+
+
+
+      <div class="column architecture drafting">
+    <div class="content">
+       <a href="slitbathroom.html">
+    <img class="clickable" src="portfolio images/worms-eye-3.png" alt="Slit Bathroom Worsmeye" style="width:100%">
+    </a>
+    </div>
+  </div>
+
+
+
+  <div class="column architecture design">
+    <div class="content">
+    <img src="portfolio images/collage2.png" alt="PEEC Collage" style="width:100%">
+    </div>
+  </div>
+
+<!-- END GRID -->
+</div>
+
+
+<!-- END MAIN -->
+</div>
+
+<!-- HEADER (uncenter website) -->
+<div class="header">
+
+<h1>Lucia Tian</h1>
+
+<br>
+
+<h2>Portfolio</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active"><a href="index.html" class="nav-link" > Home</button>
+  <button class="btn" > Architecture</button>
+  <button class="btn" >  &#160; &#160; &#160;Renders</button>
+  <button class="btn"> &#160; &#160; &#160;Drafting </button>
+  <button class="btn" >  &#160; &#160; &#160;Models </button>
+  <button class="btn"><a href="artmisc.html" class="nav-link" > Art and Design </a></button>
+  <button class="btn" >Engineering Design</button>
+  <button class="btn" >About</button>
+</div>
+<!-- END HEADER -->
+</div>
+
+<script>
+filterSelection("architecture")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+var img = document.body.getElementsByTagName("img");
+var i = 0;
+while (i < img.length) {
+    img[i].setAttribute("loading", "lazy");
+    //img[i].oncontextmenu = function(){return false;};
+    i++;
+}
+</script>
+
+</body>
+</html>
